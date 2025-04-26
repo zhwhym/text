@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哈萨克斯坦地理环境与自然资源 | 简讯新闻</title>
+    <style>
+        /* 基础样式 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f8f9fa;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 白色导航栏 - 专题风格 */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #34a853; /* 自然资源主题色 */
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: #34a853; /* 自然资源主题色 */
+        }
+        
+        /* 简洁导航菜单 */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 2rem;
+        }
+        
+        nav a {
+            color: #555;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #34a853;
+        }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #34a853;
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover:after {
+            width: 100%;
+        }
+        
+        /* 文章内容区 */
+        .article-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+        }
+        
+        .article-title {
+            font-size: 2rem;
+            font-weight: normal;
+            color: #222;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+        
+        .article-subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+        
+        .article-meta {
+            color: #888;
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        /* 文章正文样式 */
+        .article-content {
+            line-height: 1.8;
+            color: #444;
+        }
+        
+        .article-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+        
+        .article-content h2 {
+            font-size: 1.6rem;
+            color: #222;
+            margin: 2.5rem 0 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #34a853;
+        }
+        
+        .article-content h3 {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin: 2rem 0 1rem;
+            padding-left: 0.5rem;
+            border-left: 3px solid #fbbc05;
+        }
+        
+        .article-content h4 {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .article-content blockquote {
+            border-left: 4px solid #34a853;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            color: #555;
+            font-style: italic;
+            background-color: #f8f9fa;
+            border-radius: 0 6px 6px 0;
+        }
+        
+        .article-content a {
+            color: #4285f4;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+        
+        /* 数据展示样式 */
+        .data-highlight {
+            background-color: #e6f4ea;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #0d652d;
+        }
+        
+        .geo-feature {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #4285f4;
+        }
+        
+        .geo-feature h4 {
+            margin-top: 0;
+            color: #4285f4;
+        }
+        
+        /* 资源表格样式 */
+        .resource-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+        
+        .resource-table th, .resource-table td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .resource-table th {
+            background-color: #f1f3f4;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .resource-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        /* 页脚 */
+        footer {
+            background: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #34a853;
+        }
+        
+        .copyright {
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            body {
+                padding: 0 15px;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+            }
+            
+            nav li {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            
+            .article-container {
+                padding: 1.5rem;
+            }
+            
+            .article-title {
+                font-size: 1.6rem;
+            }
+            
+            .resource-table {
+                font-size: 0.85rem;
+            }
+            
+            .resource-table th, .resource-table td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 白色导航栏 -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">中哈<span>文化云脉</span></a>
+            <nav>
+                <ul>
+                    <li><a href="https://zhwhym.github.io/1//">首页</a></li>
+                    <li><a href="https://yuteng0412.github.io/shouye2/">走近哈萨克斯坦</a></li>
+                    <li><a href="https://yuteng0412.github.io/shouye3/">相关资料</a></li>
+                    <li><a href="https://yuteng0412.github.io/shouye4/">公众号</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 文章内容 -->
+    <main class="article-container">
+        <div class="article-header">
+            <h1 class="article-title">哈萨克斯坦的地理环境与自然资源</h1>
+            <p class="article-subtitle">全球最大的内陆国家与21世纪的资源宝库</p>
+            <div class="article-meta">
+                <span>专题报告</span>
+                <span>更新日期：2023年9月</span>
+            </div>
+        </div>
+        
+        <div class="article-content">
+            <p>哈萨克斯坦地处亚欧大陆腹地，是全球面积最大的内陆国家（约<span class="data-highlight">272.5万平方公里</span>），其地理环境以多样性著称，融合了草原、荒漠、高山、湖泊等丰富地貌。该国自然资源极为富集，被誉为"<span class="data-highlight">21世纪的资源宝库</span>"。</p>
+            
+            <h2>一、地理环境：复杂多样的自然画卷</h2>
+            
+            <h3>1. 地形与地貌</h3>
+            
+            <p>哈萨克斯坦地形呈现<span class="data-highlight">"西低东高、南旱北寒"</span>的格局，可划分为四大地理单元：</p>
+            
+            <div class="geo-feature">
+                <h4>西部里海低地</h4>
+                <p>位于里海东岸，以卡拉吉耶洼地（Karagiye）为核心，其海拔（<span class="data-highlight">-132米</span>）是欧亚大陆的最低点之一。该区域以盐沼、沙丘和平原为主，蕴藏全球瞩目的油气资源，如田吉兹油田和卡沙甘油田。</p>
+            </div>
+            
+            <div class="geo-feature">
+                <h4>中部哈萨克丘陵与草原</h4>
+                <p>覆盖约<span class="data-highlight">80万平方公里</span>的哈萨克草原（亦称"大草原"），占国土面积的1/3。地势平缓（平均海拔300-500米），土壤以黑钙土为主，曾是古代游牧民族的核心活动区域，现为畜牧业和小麦种植的重要基地。</p>
+            </div>
+            
+            <div class="geo-feature">
+                <h4>东部与东南部山地</h4>
+                <p>天山山脉与阿尔泰山脉在此交汇，形成天然屏障。</p>
+                <p><strong>天山山脉：</strong>最高峰汗腾格里峰（<span class="data-highlight">Khan Tengri，海拔6,995米</span>），冰川覆盖，是锡尔河与伊犁河的发源地。</p>
+                <p><strong>阿尔泰山脉：</strong>矿产资源密集，以铅、锌、金矿著称。</p>
+                <p><strong>准噶尔阿拉套山：</strong>分隔哈萨克斯坦与中国新疆，山间盆地如伊犁河谷以肥沃土地闻名。</p>
+            </div>
+            
+            <div class="geo-feature">
+                <h4>南部沙漠与绿洲</h4>
+                <p>克孜勒库姆沙漠（"红沙"）和莫因库姆沙漠占据南部，气候极端干旱。锡尔河、楚河等河流滋养了奇姆肯特、突厥斯坦等绿洲城市，形成农业与商贸中心。</p>
+            </div>
+            
+            <h3>2. 水文系统</h3>
+            
+            <p>哈萨克斯坦河流与湖泊分布不均，主要集中在东部和南部：</p>
+            
+            <h4>主要河流：</h4>
+            <ul>
+                <li><strong>额尔齐斯河：</strong>发源于中国新疆，向北流经俄罗斯注入北冰洋，是哈萨克斯坦最长河流（境内段约<span class="data-highlight">1,700公里</span>），水力资源丰富。</li>
+                <li><strong>锡尔河与伊犁河：</strong>天山融雪形成，前者注入咸海，后者流入巴尔喀什湖，支撑南部灌溉农业。</li>
+            </ul>
+            
+            <h4>湖泊：</h4>
+            <ul>
+                <li><strong>里海：</strong>西岸属哈萨克斯坦，阿克套港是重要石油出口枢纽。</li>
+                <li><strong>巴尔喀什湖：</strong>世界第十五大湖，面积<span class="data-highlight">1.8万平方公里</span>。西半部为淡水，东半部因蒸发强烈形成咸水，生态脆弱。</li>
+                <li><strong>咸海（北咸海）：</strong>曾为世界第四大湖，因过度引水灌溉面积缩减<span class="data-highlight">90%</span>，现通过科卡拉尔大坝工程逐步恢复。</li>
+            </ul>
+            
+            <h3>3. 气候特征</h3>
+            
+            <p>哈萨克斯坦属温带大陆性气候，以<span class="data-highlight">极端温差与干旱少雨</span>为特征：</p>
+            
+            <ul>
+                <li><strong>温度：</strong>冬季北部最低气温可达<span class="data-highlight">-40℃</span>，夏季南部沙漠地区最高温突破<span class="data-highlight">50℃</span>。</li>
+                <li><strong>降水：</strong>年均降水量<span class="data-highlight">100-300毫米</span>，北部稍多（300-400毫米），南部沙漠不足100毫米。</li>
+            </ul>
+            
+            <h4>气候区划：</h4>
+            <ul>
+                <li><strong>北部：</strong>寒温带，冬季漫长，适合春小麦种植；</li>
+                <li><strong>中部：</strong>干旱草原气候，以畜牧业为主；</li>
+                <li><strong>南部：</strong>半荒漠与荒漠气候，依赖灌溉农业；</li>
+                <li><strong>东部山区：</strong>垂直气候带显著，高山终年积雪，山麓降水较多。</li>
+            </ul>
+            
+            <h2>二、自然资源：上天馈赠的财富</h2>
+            
+            <h3>1. 能源资源</h3>
+            
+            <p>哈萨克斯坦是全球能源大国，石油、天然气与铀矿储量均居世界前列：</p>
+            
+            <table class="resource-table">
+                <thead>
+                    <tr>
+                        <th>资源类型</th>
+                        <th>储量</th>
+                        <th>全球排名</th>
+                        <th>主要产区</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>石油</td>
+                        <td>约300亿桶</td>
+                        <td>第12位</td>
+                        <td>田吉兹油田、卡沙甘油田</td>
+                    </tr>
+                    <tr>
+                        <td>天然气</td>
+                        <td>约2.7万亿立方米</td>
+                        <td>第15位</td>
+                        <td>卡拉恰加纳克气田</td>
+                    </tr>
+                    <tr>
+                        <td>铀矿</td>
+                        <td>220万吨</td>
+                        <td>第2位</td>
+                        <td>因凯矿床、南因凯矿</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <blockquote>
+                "卡沙甘油田是里海最大海上油田，储量130亿桶，开发成本超500亿美元，被誉为'最后的大型油田'。"
+            </blockquote>
+            
+            <h3>2. 矿产资源</h3>
+            
+            <p>哈萨克斯坦矿产种类全、品位高，被称为"<span class="data-highlight">矿产博物馆</span>"：</p>
+            
+            <table class="resource-table">
+                <thead>
+                    <tr>
+                        <th>矿产类型</th>
+                        <th>储量</th>
+                        <th>全球排名</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>铬矿</td>
+                        <td>占全球35%</td>
+                        <td>第1位</td>
+                    </tr>
+                    <tr>
+                        <td>锌</td>
+                        <td>3,500万吨</td>
+                        <td>第4位</td>
+                    </tr>
+                    <tr>
+                        <td>铅</td>
+                        <td>1,700万吨</td>
+                        <td>第3位</td>
+                    </tr>
+                    <tr>
+                        <td>金矿</td>
+                        <td>2,300吨</td>
+                        <td>第9位</td>
+                    </tr>
+                    <tr>
+                        <td>钨</td>
+                        <td>160万吨</td>
+                        <td>第1位</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>3. 农业资源</h3>
+            
+            <ul>
+                <li><strong>土地资源：</strong>可耕地超<span class="data-highlight">3,000万公顷</span>，北部黑土带是世界三大黑土区之一，小麦年产量约1,600万吨，80%出口至中亚、中东和北非，被誉为"<span class="data-highlight">欧亚粮仓</span>"。</li>
+                <li><strong>畜牧业：</strong>草原面积占国土47%，羊存栏量<span class="data-highlight">1,800万头</span>，马肉与羊毛产量居全球前列。传统乳制品如酸奶（艾兰）和马奶酒（库密斯）广受欢迎。</li>
+                <li><strong>特色物产：</strong>阿拉木图州野苹果林是苹果起源地，现存300多种野生苹果基因；里海鲟鱼鱼子酱因生态退化产量锐减。</li>
+            </ul>
+            
+            <h3>4. 生态挑战与保护</h3>
+            
+            <ul>
+                <li><strong>咸海危机：</strong>萎缩导致盐尘暴频发，周边居民呼吸道疾病发病率上升<span class="data-highlight">30%</span>。截至2025年，北咸海面积已恢复至<span class="data-highlight">6,000平方公里</span>（约为原面积的1/3），生态改善显著。</li>
+                <li><strong>荒漠化：</strong>40%土地面临荒漠化风险，政府计划2030年前植树<span class="data-highlight">20亿棵</span>。</li>
+                <li><strong>绿色转型：</strong>推动可再生能源开发，计划2030年将风电、光伏占比提升至<span class="data-highlight">15%</span>，曼吉斯套州风电场已接入中亚统一电网。</li>
+            </ul>
+            
+            <h2>三、地理与资源对国家发展的影响</h2>
+            
+            <p><strong>经济命脉：</strong>能源与矿产出口占GDP的<span class="data-highlight">25%</span>，支撑国家财政，但经济结构单一化风险突出。</p>
+            
+            <p><strong>地缘战略：</strong>地处"一带一路"中线，中欧班列<span class="data-highlight">40%</span>过境哈萨克斯坦，里海港口与"中间走廊"计划提升其欧亚物流枢纽地位。</p>
+            
+            <p><strong>生态制约：</strong>水资源短缺与土地退化限制农业潜力，需依赖节水技术与跨境合作（如中哈霍尔果斯河联合治理）。</p>
+            
+            <blockquote>
+                "哈萨克斯坦的地理环境塑造了其游牧传统与资源依赖型经济，而矿产与能源宝藏既是发展引擎，也是转型挑战。在开发资源与保护生态之间寻求平衡，将成为这个国家实现可持续发展的关键命题。"
+            </blockquote>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">关于我们</a>
+            <a href="#">联系方式</a>
+            <a href="#">加入我们</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 中哈网络文化研习社</p>
+        </div>
+    </footer>
+</body>
+</html>
